@@ -3,21 +3,17 @@
 This project is an interactive Todo Card built using **HTML, CSS, and Vanilla JavaScript**.  
 It extends the Stage 0 static UI into a fully interactive and stateful component.
 
----
-
 ## Live Demo
 
-[Add your Vercel link here]
+[https://todo-card-1.vercel.app/]
 
----
+[https://github.com/SirTee33/todo-card-1]
 
 ## Tech Stack
 
 - HTML5
 - CSS3
 - JavaScript (Vanilla)
-
----
 
 ## What Changed from Stage 0
 
@@ -29,8 +25,6 @@ It extends the Stage 0 static UI into a fully interactive and stateful component
 - Improved accessibility and keyboard interaction
 - Added **priority indicator with dynamic colors**
 
----
-
 ## New Design Decisions
 
 - Clean card-based UI layout
@@ -40,16 +34,12 @@ It extends the Stage 0 static UI into a fully interactive and stateful component
 - Collapsible description to reduce UI clutter
 - Minimalistic button styling for better UX
 
----
-
 ## Known Limitations
 
 - No backend persistence (data resets on refresh)
 - Single todo card only (no list management)
 - Time updates depend on browser interval timing
 - No drag-and-drop reordering
-
----
 
 ## Accessibility Notes
 
@@ -59,8 +49,6 @@ It extends the Stage 0 static UI into a fully interactive and stateful component
 - Form inputs are properly labeled
 - Live time updates are readable and structured
 - Color is not the only indicator of status (text + visual cues used)
-
----
 
 ## Features
 
@@ -72,8 +60,6 @@ It extends the Stage 0 static UI into a fully interactive and stateful component
 - Overdue indicator
 - Priority visual indicator
 - Delete & Edit buttons (UI level)
-
----
 
 ## Author
 
