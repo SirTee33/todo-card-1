@@ -1,0 +1,186 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #eef2ff, #f8fafc);
+  display: flex;
+  justify-content: center;
+  padding: 40px 16px;
+}
+
+.card {
+  width: 100%;
+  max-width: 480px;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+}
+
+#title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1e293b;
+  margin: 0;
+}
+
+#descSection {
+  position: relative;
+}
+
+#descSection.collapsed {
+  max-height: 50px;
+  overflow: hidden;
+}
+
+#description {
+  color: #475569;
+  line-height: 1.5;
+}
+
+button {
+  border: none;
+  border-radius: 8px;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+#editBtn {
+  background: #3b82f6;
+  color: white;
+}
+
+[data-testid="test-todo-delete-button"] {
+  background: #ef4444;
+  color: white;
+}
+
+[data-testid="test-todo-priority"] {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+#priorityIndicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 6px;
+}
+
+#statusText {
+  font-size: 13px;
+  font-weight: 600;
+  color: #2563eb;
+}
+
+select {
+  padding: 6px;
+  border-radius: 6px;
+  border: 1px solid #cbd5f5;
+  font-size: 13px;
+}
+
+#timeRemaining {
+  font-size: 13px;
+  color: #2563eb;
+  font-weight: 500;
+}
+
+#overdue {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.overdue {
+  color: #dc2626;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+li {
+  background: #e2e8f0;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+}
+
+input[type="checkbox"] {
+  cursor: pointer;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid #e2e8f0;
+}
+
+form input,
+form textarea,
+form select {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #cbd5f5;
+  font-size: 13px;
+}
+
+form textarea {
+  resize: vertical;
+  min-height: 60px;
+}
+
+#saveBtn {
+  background: #10b981;
+  color: white;
+}
+
+#cancelBtn {
+  background: #94a3b8;
+  color: white;
+}
+
+#toggleBtn {
+  background: transparent;
+  color: #3b82f6;
+  padding: 0;
+  text-align: left;
+}
+
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+form[hidden] {
+  display: none !important;
+}
